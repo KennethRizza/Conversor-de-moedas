@@ -17,7 +17,7 @@ const convertValues = () => {
     }).format(input);
 
     if(select.value === 'US$ Dolar Americano'){
-        currencyValueText.innerHTML = new Intl.NumberFormat(`en-US`, {
+        currencyValueText.innerHTML = new Intl.NumberFormat(`en-us`, {
             currency: `USD`,
             style: 'currency',
         }).format(input / dolar);
