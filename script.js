@@ -1,7 +1,6 @@
 const button = document.getElementById('button-convert')
 const select = document.getElementById('currency-select')
 
-
 const dolar = 5.3
 const euro = 5.9
 const bitcoin = 103235.00
@@ -22,7 +21,6 @@ const convertValues = () => {
             currency: `USD`,
             style: 'currency',
         }).format(input / dolar);
-    
     }
 
     if(select.value === '€ Euro'){
@@ -41,12 +39,9 @@ const convertValues = () => {
     }               
 }
 
-    
-
 const  changeCurrency = () => {
     const currencyName = document.getElementById('currency-name')
     const currencyImgEua = document.getElementById('currency-img-eua')
-
 
     if (select.value === "US$ Dolar Americano") {
         currencyName.innerHTML = "Dolar Americano"
@@ -61,9 +56,7 @@ const  changeCurrency = () => {
         currencyName.innerHTML = "Bitcoin"
         currencyImgEua.src = "./img/bitcoin.png"
     }
-   
 }
-
 
 button.addEventListener('click', convertValues)
 select.addEventListener('change', changeCurrency)
